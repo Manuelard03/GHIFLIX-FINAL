@@ -1,3 +1,4 @@
+/*Carrusel catalogo*/
 export class Pelicula {
     titulo = ""
     banner = ""
@@ -22,5 +23,6 @@ export class Pelicula {
         a.appendChild(img);
         return card;
     }
-
 }
+
+/*Slider*/

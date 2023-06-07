@@ -93,16 +93,6 @@ flechaIzquierda.addEventListener('click', () => {
             modal.classList.remove('modal--show');
         });
 
-/*slider*/
-var counter = 1;
-        setInterval(() => {
-            document.getElementById('radio' + counter).checked = true;
-            counter++;
-            if(counter > 4){
-                counter = 1;
-            }
-        }, 5000)
-
 /*Fotos carrusel*/
 const carruseles = document.querySelectorAll(".carousel");
 const divs = Array.from(carruseles);
@@ -142,6 +132,94 @@ class Pelicula {
 
 const peliRandom = (peliculas) => {
   return peliculas[Math.floor(Math.random() * peliculas.length)];
+}
+
+const mifuncion = async () => {
+  const response = await fetch(
+    "https://raw.githubusercontent.com/Manuelard03/GHIFLIX-FINAL/main/assets/json/peliculas.json"
+  );
+  const data = await response.json();
+  const carruseles = document.querySelectorAll(".carousel");
+  
+  for (let movie of data.Peliculas) {
+    let peli = new Pelicula(movie.card, movie.banner, movie.id, movie.banner_title, movie.synopsis);
+    const pelis = peli.render();
+
+    carruseles.forEach((carrusel) => {
+      carrusel.appendChild(pelis.cloneNode(true));
+    });
+  }
+
+  for (let peli of data.Peliculas) {
+    let tarjeta = document.getElementById(peli.id);
+    tarjeta.addEventListener('click', () => {
+      const mainMovie = document.querySelector('.peliculaprincipal');
+      peliculaprincipal.style.backgroundColor = 'linear-gradient(rgba(0, 0, 255, 0.166), rgba(0, 0, 0, 0))';
+      peliculaprincipal.innerHTML = `
+      <div class="botones"><button role="button" class="boton"><i class="fa-solid fa-play"></i>Reproducir</button>
+      <button role="button" class="boton"><i class="fa-regular fa-bookmark"></i>Guardar</button>`;
+      const descripcion = document.createElement("p");
+      const titulo_banner = document.createElement("h3");
+      const img_title = document.createElement("img");
+      descripcion.classList.add("descripcion");
+      titulo_banner.classList.add("titulo");
+      img_title.src = peli.banner_title;
+      descripcion.innerHTML = `
+        ${peli.synopsis}
+        `;
+      peliculaprincipal.appendChild(descripcion);
+      peliculaprincipal.appendChild(titulo_banner);
+      titulo_banner.appendChild(img_title);
+      peliculaprincipal.style.background = `linear-gradient(rgba(0, 0, 255, 0.166), rgba(0, 0, 0, 0.855)), url(${peli.banner})`;
+      peliculaprincipal.style.backgroundSize = 'cover';
+      return
+    });
+  };
+
+  peliculaprincipal.style.backgroundColor = 'linear-gradient(rgba(0, 0, 255, 0.166), rgba(0, 0, 0, 0))';
+};
+
+mifuncion();
+
+/*slider*/
+var counter = 1;
+        setInterval(() => {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 4){
+                counter = 1;
+            }
+        }, 5000)
+
+/*Slider fotos*/
+const slider = document.querySelectorAll(".slider");
+const divs = Array.from(carruseles);
+
+class Pelicula {
+  titulo = "";
+  banner = "";
+  tarjeta = "";
+  overview = "";
+
+  constructor(banner, id, banner_title) {
+    this.banner = banner;
+    this.id = id;
+    this.banner_title = banner_title;
+  }
+
+  render() {
+    const a = document.createElement("a");
+    const img = document.createElement("img");
+
+    card.classList.add("pelicula");
+    card.id = this.id;
+    img.src = this.tarjeta;
+    a.href = "#";
+    card.appendChild(a);
+    a.appendChild(img);
+
+    return card;
+  }
 }
 
 const mifuncion = async () => {
