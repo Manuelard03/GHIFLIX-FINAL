@@ -1,0 +1,230 @@
+:root {
+    --fondo: #091E28;
+}
+
+@font-face {
+    font-family: 'AvantGarde LT Mediana';
+    src: url('/assets/varios/Font/AvantGarde\ LT\ Mediana.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--fondo);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.perfiles .imagenes {
+    display: flex;
+    margin-right: 60px;
+    padding: 20px;
+    align-items: center;
+}
+
+.perfiles .imagenes .perfil-gato {
+    position: absolute;
+    width: 250px;
+    height: 310px;
+    border-left: 81px;
+    vertical-align: top; 
+    top: 100px;
+    left: 170px;
+    cursor: pointer;
+    transition: .3s ease all
+}
+
+.perfiles .imagenes .perfil-gato:hover {
+    scale: 1.09;
+}
+
+.perfiles .imagenes .perfil-gato:active{
+    scale: 0.95;
+}
+
+.perfiles .imagenes .perfil-calcifer {
+    position: absolute;
+    width: 195px;
+    height: 240px;
+    left: 500px;
+    top: 135px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.perfiles .imagenes .perfil-calcifer:hover {
+    scale: 1.09;
+}
+
+.perfiles .imagenes .perfil-calcifer:active{
+    scale: 0.95;
+}
+
+.perfiles .imagenes .perfil-sincara {
+    position: absolute;
+    width: 193px;
+    height: 280px;
+    left: 800px;
+    top: 100px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.perfiles .imagenes .perfil-sincara:hover {
+    scale: 1.09;
+}
+
+.perfiles .imagenes .perfil-sincara:active{
+    scale: 0.95;
+}
+
+.perfiles .imagenes .agregar {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    left: 1105px;
+    top: 225px;
+    cursor: pointer;
+    transition: .3s ease all
+}
+
+.perfiles .imagenes .agregar:hover {
+    scale: 1.09;
+}
+
+.perfiles .imagenes .agregar:active{
+    scale: 0.95;
+}
+
+.contenedor .nombre {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    width: 139px;
+    height: 38px;
+    left: 225px;
+    top: 400px;
+    font-family: AvantGarde LT Mediana;
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 27px;
+    line-height: 33px;
+    text-align: center;
+    transition: .3s ease all
+}
+
+.contenedor .nombre:hover {
+    scale: 1.09;
+}
+
+.contenedor .nombre:active{
+    scale: 0.95;
+}
+
+.nombre2 .nombre {
+    color: white;
+    text-decoration: none;
+    font-family: AvantGarde LT Mediana;
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 27px;
+    line-height: 33px;
+    text-align: center;
+    position: absolute;
+    width: 139px;
+    height: 38px;
+    left: 530px;
+    top: 400px;
+    transition: .3s ease all
+}
+.nombre2 .nombre:hover {
+    scale: 1.09;
+}
+
+.nombre2 .nombre:active{
+    scale: 0.95;
+}
+
+.nombre3 .nombre {
+    color: white;
+    text-decoration: none;
+    font-family: AvantGarde LT Mediana;
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 27px;
+    line-height: 33px;
+    text-align: center;
+    position: absolute;
+    width: 139px;
+    height: 38px;
+    left: 830px;
+    top: 400px;
+    transition: .3s ease all
+}
+.nombre3 .nombre:hover {
+    scale: 1.09;
+}
+
+.nombre3 .nombre:active{
+    scale: 0.95;
+}
+
+.usuario-logeado p {
+    color: white;
+    margin-left: 545px;
+    margin-top: 20px;
+    font-family: 'AvantGarde LT Mediana';
+    font-size: 27px;
+}
+
+.form-control {
+    color: white;
+    display: inline-block;
+    background: none;
+    border: 1.8px solid white;
+    border-radius: 30px;
+    height: 45px;
+    width: 175px;
+    font-size: 16px;
+    border-style: solid;
+    text-decoration: none;
+    margin-left: 560px;
+    margin-top: 400px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.form-control:hover {
+    background:#00090e;
+    color: white;
+    border: none;
+    scale: 1.05;
+}
+
+.form-control:active {
+    scale: 0.95;
+}
+
+.logo {
+    position: absolute;
+    padding: 0;
+    width: 250px;
+    height: 100px;
+    left: 500px;
+    top: 570px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.logo:hover {
+    scale: 1.05;
+}
+
+.logo:active{
+    scale: 0.95;
+}

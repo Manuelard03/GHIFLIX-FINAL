@@ -1,0 +1,24 @@
+{
+    "Perfiles": [
+        {
+            "id": 1,
+            "title": "Gato",
+            "card": "https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/4.%20PERFILES/img/2-GATO-PERFIL.png"
+        },
+        {
+            "id": 2,
+            "title": "Calcifer",
+            "card": "https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/4.%20PERFILES/img/3-CALCIFER-PERFIL.png"
+        },
+        {
+            "id": 3,
+            "title": "Sincara",
+            "card": "https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/4.%20PERFILES/img/4-SINCARA-PERFIL.png"
+        },
+        {
+            "id": 4,
+            "title": "agregar",
+            "card": "https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/4.%20PERFILES/img/5-AGREGAR-PERFIL.png"
+        }
+    ]
+}
