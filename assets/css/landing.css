@@ -1,0 +1,1290 @@
+:root {
+    --fondo: #3E9D7D;
+}
+
+@font-face {
+    font-family: 'AvantGarde LT Mediana';
+    src: url('../varios/Font/AvantGarde\ LT\ Mediana.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--fondo);
+    font-family: 'Roboto', sans-serif;
+}
+
+body::-webkit-scrollbar{
+    width: 9px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #00141f;
+    border-radius: 5px;
+}
+
+.contenedor {
+    width: 100%;
+    margin: auto;
+}
+
+/*HEADER*/
+
+header {
+    position: fixed;
+    display: flex;
+    transition: 0.6s;
+    z-index: 999;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.7s;
+}
+
+header.down{
+    background: #3e9d7dc2;
+    padding: -10px 20px;
+    height: 100px;
+}
+
+header .hidden {
+    overflow: hidden;
+    display: none;
+    position: absolute;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.nav {
+    width: 100%;
+    height: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    position: relative;
+}
+
+.nav .active {
+    background: #3E9D7D;
+    padding: 15px;
+}
+
+.Logotipo {
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.Logotipo:hover {
+    scale: 1.05;
+}
+
+.Logotipo:active{
+    scale: 0.95;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    list-style: none;
+    margin: 20px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    color: #076655;
+}
+
+.menu li a .boton {
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border-radius: 30px;
+    border: 1.8px solid white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+    margin-top: -10px;
+    outline: none;
+}
+
+.menu .boton:hover {
+    scale: 1.05;
+    background:#1ac0a2;
+    color: white;
+    border: none;
+}
+
+.menu .boton:active{
+    scale: 0.95;
+}
+
+.nav .toggle-btn {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*DROPDOWN MENU*/
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 90px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu li {
+    list-style: none;
+}
+
+.dropdown_menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown_menu li a:hover {
+    color: #076655;
+}
+
+.dropdown_menu li a .boton {
+    display: inline-block;
+    padding: 11px 20px;
+    background-color: #1ac0a2;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+    margin-top: -10px;
+    outline: none;
+}
+
+.dropdown_menu .boton:hover {
+    scale: 1.05;
+    background: none;
+    color: white;
+    border: 1.8px solid white;
+}
+
+.dropdown_menu .boton:active{
+    scale: 0.95;
+}
+
+.dropdown_menu.open {
+    height: 260px;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu li a .boton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*RESPONSIVE DESIGN*/
+@media(max-width: 880px){
+    .nav .menu,
+    .nav .boton{
+        display: none;
+    }
+
+    .nav .toggle-btn{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+}
+
+@media(max-width: 576px){
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+}
+
+/*SECCION PRINCIPAL*/
+
+#seccion-principal {
+    height: calc(100vh - 150px);
+    font-size: 16px;
+    min-height: 55em;
+    color: white;
+    background: url(./img/3-FONDO-PRINCIPAL-HOWL.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    align-items: end;
+}
+
+#seccion-principal .contenedor {
+    margin-bottom: 15em;
+    padding: 50px 60px;
+}
+
+#seccion-principal img {
+    height: 100px;
+    width: 270px;
+}
+
+#seccion-principal .divisor {
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+#seccion-principal .descripcion {
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 40%;
+    margin-bottom: 1.25em;
+}
+
+#seccion-principal .boton2 {
+    font-family: AvantGarde LT Mediana;
+    display: inline-block;
+    padding: 16px 25px;
+    background-color:#22a58d9a;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+    box-shadow: 5px 5px 10px -5px #08463a;
+    outline: none;
+}
+
+#seccion-principal .boton2:hover {
+    scale: 1.05;
+    background: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1.8px solid white;
+}
+
+#seccion-principal .boton2:active {
+    scale: 0.95;
+}
+
+/*QUIENES SOMOS*/
+
+#quienes-somos {
+    margin: 0 auto;
+    padding: 50px 60px;
+    height: 680px;
+}
+
+#quienes-somos .intro {
+    font-size: 16px;
+    min-height: 10px;
+    color: white;
+}
+
+#quienes-somos .titulo {
+    font-family: AvantGarde LT Mediana;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 1.75em;
+    max-width: 90%;
+    margin-bottom: 5px;
+    color: white;
+}
+
+#quienes-somos .divisor2 {
+    width: 1225px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#quienes-somos .descripcion {
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 70%;
+    margin-bottom: 1.25em;
+}
+
+.persona1 {
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.persona1 .texto-persona1 {
+    margin-top: 150px;
+    margin-right: -540px;
+    color: white;
+    line-height: 1.5em;
+    text-align: right;
+    padding-left: 330px;
+}
+
+.persona1 .imagen1 {
+    margin-left: 600px;
+    margin-top: 0px;
+    width: 290px;
+    height: 390px;
+    cursor: pointer;
+    transition: .3s ease all;
+    
+}
+
+.persona1 .imagen1:hover {
+    scale: 1.05;
+}
+
+.persona2 {
+    display: flex;
+    align-items: center;
+}
+
+#quienes-somos .persona2 .imagen2 {
+    position: absolute;
+    width: 300px;
+    height: 470px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.persona2 .imagen2:hover {
+    scale: 1.05;
+}
+
+.persona2 .texto-persona2 {
+    margin-top: 150px;
+    margin-left: 30px;
+    max-width: 70%;
+    color: white;
+    line-height: 1.5em;
+    padding-left: 300px;
+}
+
+/*CATALOGO*/
+
+#catalogo {
+    margin: 0 auto;
+    padding: 20px 60px;
+    background-color: #091E28;
+    
+}
+
+#catalogo .inicio {
+    font-size: 16px;
+    min-height: 10px;
+    color: white;
+}
+
+#catalogo .titulo {
+    font-family: AvantGarde LT Mediana;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 1.75em;
+    max-width: 90%;
+    margin-bottom: 5px;
+    color: white;
+}
+
+#catalogo .divisor3 {
+    width: 1225px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#catalogo .descripcion {
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 100%;
+    margin-bottom: 1.25em;
+}
+
+.indicadores{
+    padding-left: 553px;
+}
+#catalogo .indicadores button {
+	background:#002a42bd;
+	height: 20px;
+	width: 20px;
+    border-radius: 50px;
+	cursor: pointer;
+	border: none;
+    margin: 10px;
+    transition: .2s ease all;
+}
+#catalogo .indicadores button:hover{
+    background: #00090e81;
+}
+#catalogo .indicadores button.activo {
+    background: #00090e;
+    scale: 1.05;
+}
+
+#catalogo .indicadores button:active{
+    scale: 0.95;
+}
+
+.peliculas-recomendadas .contenedor-principal {
+	display: flex;
+	align-items: center;
+	position: relative;
+	
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+	position: absolute;
+	border: none;
+	background: none;
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: white;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda:hover,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha:hover {
+	background: none;
+	color: #010f16;
+    scale: 1.05;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda:active,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha:active{
+    scale: 0.95;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda {
+	left: 0;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+	right: 0;
+}
+
+/* ---- ----- ----- Carousel ----- ----- ----- */
+.peliculas-recomendadas .imagenes {
+	width: 100%;
+	padding: 20px 0px;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.peliculas-recomendadas .imagenes .carousel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula {
+	min-width: 20%;
+	transition: .3s ease all;
+	margin: 20px;
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula:hover {
+	scale: 1.05;
+	transform-origin: center;
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula:active{
+    scale: 0.95;
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula img {
+	width: 100%;
+	vertical-align: top;
+	border: none;
+}
+
+.peliculas-recomendadas .imagenes .carousel .TOTORO .totoro {
+	height: 460px;
+    width: 460px;
+    margin: 20px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.peliculas-recomendadas .imagenes .carousel .TOTORO .totoro:hover {
+    scale: 1.05;
+}
+
+.peliculas-recomendadas .imagenes .carousel .TOTORO .totoro:active{
+    scale: 0.95;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+.modal__container{
+    margin: auto;
+    width: 90%;
+    max-width: 900px;
+    max-height: 90%;
+    background-image: url(./img/IMAGEN\ FONDO\ MODAL.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+    border-radius: 25px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition:var(--transition);
+}
+
+.modal__container::before {
+    content: '';
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.7;
+    border-radius: 25px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.modal__año {
+    font-size: 18px;
+    color: #002638;
+    position: relative;
+    box-shadow: #000000;
+}
+
+
+.modal__info {
+    position: relative;
+    color: #002638;
+    text-shadow: #000000;
+}
+
+.modal__paragraph{
+    position: relative;
+    margin-bottom: 10px;
+    color: white;
+    max-width: 80%;
+    line-height: 1.5em;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+.modal__generos {
+    position: relative;
+    color: white;
+    font-style: italic;
+
+}
+
+.modal__img {
+    position: relative;
+    width: 90%;
+    max-width: 300px;
+}
+
+.modal__boton {
+    position: relative;
+    font-family: AvantGarde LT Mediana;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #091E28;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+    box-shadow: 5px 5px 10px -5px #08463a;
+    outline: none;
+}
+.modal__boton i {
+    margin-right: 10px;
+}
+
+.modal__boton:hover {
+    scale: 1.05;
+}
+
+.modal__boton:active {
+    scale: 0.95;
+}
+
+.modal__close{
+    position: relative;
+    color: #fff;
+    padding: 0.6em 0.8em;
+    display: inline-block;
+    transition: background-color .3s;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.modal__close:hover{
+    scale: 1.05;
+    color: #00090e;
+    background-color: white;
+    border-radius: 50%;
+
+    
+}
+
+.modal__close:active{
+    scale: 0.95;
+}
+
+@media (max-width:800px) {
+    .modal__container{
+        padding: 2em 1.5em;
+    }
+
+    .modal__title{
+        font-size: 2rem;
+    }
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula .chihiro {
+	margin: 20px;
+    height: 460px;
+    width: 250px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.peliculas-recomendadas .imagenes .carousel  .pelicula .chihiro:hover {
+    scale: 1.05;
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula .chihiro:active{
+    scale: 0.95;
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula .kiki {
+    margin: 20px;
+    height: 460px;
+    width: 280px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula .kiki:hover {
+    scale: 1.05;
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula .kiki:active{
+    scale: 0.95;
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula .princess {
+    margin: 20px;
+	width: 350px;
+    height: 380px;
+	margin-top: 100px;
+    margin-right: -50px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula .princess:hover {
+    scale: 1.05;
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula .princess:active{
+    scale: 0.95;
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula .ponyo {
+    margin: 20px;
+	width: 430px;
+    height: 350px;
+	margin-top: 110px;
+    margin-right: -50px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula .ponyo:hover {
+    scale: 1.05;
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula .ponyo:active{
+    scale: 0.95;
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula .only {
+    margin: 20px;
+    height: 470px;
+    width: 320px;
+    margin-left: 180px;
+    margin-top: -0.2px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula .only:hover {
+    scale: 1.05;
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula .only:active{
+    scale: 0.95;
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula .poppy-hill {
+    margin: 20px;
+    height: 460px;
+    width: 350px;
+    margin-left: 150px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula .poppy-hill:hover {
+    scale: 1.05;
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula .poppy-hill:active{
+    scale: 0.95;
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula .ocean-waves {
+    margin: 20px;
+    height: 380px;
+    width: 370px;
+    margin-left: 210px;
+    margin-top: 110px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula .ocean-waves:hover {
+    scale: 1.05;
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula .ocean-waves:active{
+    scale: 0.95;
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula .pompoko {
+    margin: 20px;
+    height: 350px;
+    width: 300px;
+    margin-left: 230px;
+    margin-top: 110px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula .pompoko:hover {
+    scale: 1.05;
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula .pompoko:active{
+    scale: 0.95;
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula .marnie {
+    margin: 20px;
+    height: 380px;
+    width: 300px;
+    margin-left: 270px;
+    margin-top: 110px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula .marnie:hover {
+    scale: 1.05;
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula .marnie:active{
+    scale: 0.95;
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula .tales {
+    margin: 20px;
+    height: 350px;
+    width: 330px;
+    margin-left: 270px;
+    margin-top: 110px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula .tales:hover {
+    scale: 1.05;
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula .tales:active{
+    scale: 0.95;
+}
+.peliculas-recomendadas .imagenes .carousel .pelicula .porco {
+    margin: 20px;
+    height: 350px;
+    width: 280px;
+    margin-left: 330px;
+    margin-top: 110px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula .porco:hover {
+    scale: 1.05;
+}
+
+.peliculas-recomendadas .imagenes .carousel .pelicula .porco:active{
+    scale: 0.95;
+}
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 800px) {
+	
+	.peliculas-recomendadas .imagenes {
+		overflow: visible;
+	}
+
+	.peliculas-recomendadas .imagenes .carousel {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+
+	.peliculas-recomendadas .indicadores,
+	.peliculas-recomendadas .flecha-izquierda,
+	.peliculas-recomendadas .flecha-derecha {
+		display: none;
+	}
+}
+
+/*slider*/
+.slider{
+    width: 1355px;
+    height: 700px;
+    overflow: hidden;
+}
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+.slide img{
+    width: 1355px;
+    height: 700px;
+}
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: 150px;
+    margin-left: 260px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #00141f;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    height: 20px;
+    width: 20px;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background: #00141f;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 649.5px;
+    margin-left: 260px;
+}
+.navigation-auto div{
+    border: 2px solid #00141f;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+    height: 20px;
+    width: 20px;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #00141f;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #00141f;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #00141f;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #00141f;
+}
+
+
+/*CARRUSEL*/
+
+#carrusel {
+    font-size: 16px;
+    
+    color: white;
+    background: url(./img/8-FONDO-CHIHIRO-SPIRITED\ AWAY.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#carrusel .carrusel-parte-uno{
+    font-size: 16px;
+    color: white;
+    display: flex;
+}
+
+#carrusel .contenedor2 {
+    margin: 0 auto;
+    margin-bottom: 15em;
+    padding: 50px 60px;
+}
+
+#carrusel .form {
+    background-color: #22a58d65;
+    width: 90%;
+    border-radius: 30px;
+    color: white;
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 80px;
+    margin-bottom: 20px;
+    min-height: 50vh;
+    padding: 40px 40px;
+    font-size: 16px;
+    box-shadow: 0 5px 10px -5px rgba(0 0 0 / 30%);
+    box-sizing: content-box;
+    justify-content: space-around;
+}
+
+#carrusel .titulo {
+    font-family: AvantGarde LT Mediana;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 1.75em;
+    max-width: 90%;
+    color: white;
+    margin: 10px;
+}
+
+#carrusel .datos-curiosos {
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 100%;
+    margin-bottom: 1.25em;
+    margin: 10px;
+}
+
+#carrusel .texto {
+    margin: 0 auto;
+    padding: 0px 60px 30px;
+    align-items: center;
+}
+
+#carrusel .boton3 {
+    font-family: AvantGarde LT Mediana;
+    display: inline-block;
+    padding: 16px 25px;
+    background-color:#22A58E;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+    box-shadow: 5px 5px 10px -5px #08463a;
+}
+
+#carrusel .boton3:hover {
+    scale: 1.05;
+    background: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.151);
+    border: 1.8px solid white;
+}
+
+#carrusel .boton3:active{
+    scale: 0.95;
+}
+
+#carrusel .texto .subtitulo {
+    font-family: AvantGarde LT Mediana;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 1.75em;
+    color: white;
+}
+
+#carrusel .texto .titulo {
+    font-family: AvantGarde LT Mediana;
+    font-weight: normal;
+    font-size: 70px;
+    line-height: 1.75em;
+    max-width: 90%;
+    color: white;
+}
+
+/*PROMOCION*/
+
+#promocion {
+    background-color: #091E28;
+    font-size: 16px;
+    min-height: 45em;
+    color: white;
+}
+
+#promocion .titulo {
+    font-family: AvantGarde LT Mediana;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 1.75em;
+    color: white;
+    margin-left: 400px;
+    padding-top: 70px;
+}
+
+#promocion .mockups {
+    margin-right: 200px;
+    margin-left: 160px;
+    height: 500px;
+    width: 950px;
+    align-items: center;
+}
+
+#promocion .boton4 {
+    display: inline-block;
+    padding: 13px 25px;
+    margin-left: 575px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border-radius: 30px;
+    border: 1.8px solid white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+#promocion .boton4:hover {
+    scale: 1.05;
+    background: #00090e;
+    color: white;
+    border: none;
+}
+
+#promocion .boton4:active{
+    scale: 0.95;
+}
+
+/*CONTACTO*/
+
+#contactanos {
+    font-size: 16px;
+    min-height: 40em;
+    color: white;
+    background: url(./img/11-FONDO-CONTACTO.png);
+    background-position: center center;
+    background-size:cover;
+}
+
+#contactanos .form {
+    background-color: #228a77b0;
+    width: 400px;
+    border-radius: 25px;
+    color: white;
+    margin-left: 800px;
+    border-top: 50px;
+    padding: 30px;
+}
+
+#formulario h3 {
+    font-family: AvantGarde LT Mediana;
+    font-weight:lighter;
+    font-size: 20px;
+    line-height: 1.75em;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-left: 98px;
+
+}
+
+.controls {
+    width: 100%;
+    color: white;
+    background-color: #00705c;
+    padding: 10px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    outline: none;
+}
+
+.controls::placeholder {
+    color: rgba(255, 255, 255, 0.671);
+}
+
+.formulario .botons {
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border-radius: 30px;
+    border: 1.8px solid white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+    margin: 16px 0;
+    margin-left: 110px;
+}
+
+.formulario .botons:hover {
+    scale: 1.05;
+    background:#1ac0a2;
+    color: white;
+    border: none;
+}
+
+.formulario .botons:active{
+    scale: 0.95;
+}
+
+#contactanos .contacto .textos {
+    display: flex;
+}
+
+#contactanos .contacto h3 {
+    font-family: AvantGarde LT Mediana;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 1.75em;
+    color: white;
+    margin-left: 150px;
+}
+
+#contactanos .contacto .nuestro-contacto h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.75em;
+    color: white;
+    margin-left: 150px;
+    margin-bottom: 20px;
+}
+
+#contactanos .contacto .nuestro-contacto p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 1.75em;
+    color: white;
+    margin-left: 150px;
+    margin-bottom: 20px;
+}
+
+#contactanos .contacto .nuestras-oficinas h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.75em;
+    color: white;
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
+
+#contactanos .contacto .nuestras-oficinas p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 1.75em;
+    color: white;
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
