@@ -191,9 +191,9 @@ var counter = 1;
             }
         }, 5000)
 
-/*Slider fotos*/
+/*Slider fotos
 const slider = document.querySelectorAll(".slider");
-const divs = Array.from(carruseles);
+const div = Array.from(carruseles);
 
 class Pelicula {
   titulo = "";
@@ -222,14 +222,14 @@ class Pelicula {
   }
 }
 
-const mifuncion = async () => {
+const funcionslider = async () => {
   const response = await fetch(
-    "https://raw.githubusercontent.com/Manuelard03/GHIFLIX-FINAL/main/assets/json/peliculas.json"
+    "https://raw.githubusercontent.com/Manuelard03/GHIFLIX-FINAL/main/assets/json/slider.json"
   );
   const data = await response.json();
-  const carruseles = document.querySelectorAll(".carousel");
+  const carruseles = document.querySelectorAll(".slider");
   
-  for (let movie of data.Peliculas) {
+  for (let movie of data.Slider) {
     let peli = new Pelicula(movie.card, movie.banner, movie.id, movie.banner_title, movie.synopsis);
     const pelis = peli.render();
 
@@ -238,33 +238,23 @@ const mifuncion = async () => {
     });
   }
 
-  for (let peli of data.Peliculas) {
+  for (let peli of data.Slider) {
     let tarjeta = document.getElementById(peli.id);
     tarjeta.addEventListener('click', () => {
-      const mainMovie = document.querySelector('.peliculaprincipal');
-      peliculaprincipal.style.backgroundColor = 'linear-gradient(rgba(0, 0, 255, 0.166), rgba(0, 0, 0, 0))';
-      peliculaprincipal.innerHTML = `
-      <div class="botones"><button role="button" class="boton"><i class="fa-solid fa-play"></i>Reproducir</button>
-      <button role="button" class="boton"><i class="fa-regular fa-bookmark"></i>Guardar</button>`;
+      
       const descripcion = document.createElement("p");
       const titulo_banner = document.createElement("h3");
       const img_title = document.createElement("img");
       descripcion.classList.add("descripcion");
       titulo_banner.classList.add("titulo");
       img_title.src = peli.banner_title;
-      descripcion.innerHTML = `
-        ${peli.synopsis}
-        `;
       peliculaprincipal.appendChild(descripcion);
       peliculaprincipal.appendChild(titulo_banner);
       titulo_banner.appendChild(img_title);
-      peliculaprincipal.style.background = `linear-gradient(rgba(0, 0, 255, 0.166), rgba(0, 0, 0, 0.855)), url(${peli.banner})`;
-      peliculaprincipal.style.backgroundSize = 'cover';
       return
     });
   };
-
-  peliculaprincipal.style.backgroundColor = 'linear-gradient(rgba(0, 0, 255, 0.166), rgba(0, 0, 0, 0))';
 };
 
-mifuncion();
+funcionslider();
+*/
