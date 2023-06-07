@@ -1,0 +1,241 @@
+@font-face {
+    font-family: 'AvantGarde LT Mediana';
+    src: url('../varios/Font/AvantGarde\ LT\ Mediana.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+body {
+    background-image: url(https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/2.%20INICIO%20SESION/img/2-FONDO-INICIO%20DE%20SESION.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+    margin: 0;
+    font-family: roboto, sans-serif;
+}
+
+.logo {
+    float: left;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.logo .totoro {
+    width: 250px;
+    height: 107px;
+    position: absolute;
+    margin-top: 15px;
+    left: 100px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.logo .totoro:hover {
+    scale: 1.05;
+}
+
+.logo .totoro:active{
+    scale: 0.95;
+}
+
+.formulario-inicio {
+    width: 400px;
+    height: 550px;
+    border-radius: 5%;
+    position: absolute;
+    left: 800px;
+    top: 60px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), rgba(9, 30, 40, 0.88);
+}
+
+section {
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+p {
+    color: #F4F1F1;
+    font-size: 35px;
+    text-align: center;
+    padding-top:  10%;
+    margin-top: 5%;
+    font-family: 'AvantGarde LT Mediana';
+
+}
+
+#correo {
+    font-size:14px; 
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color:#7aa0bc44;
+    border-radius: 50px;
+    height: 25px;
+    width: 280px;
+    padding: 8px;
+    margin-left: 15%;
+    display: table-row;
+    border: none;
+    margin-block: 20px;
+    vertical-align: middle;
+    outline: none;
+    
+}
+
+#contrasena {
+    font-size:14px; 
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color:#7aa0bc44;
+    border-radius: 50px;
+    height: 25px;
+    width: 280px;
+    padding: 8px;
+    margin-left: 15%;
+    display: table-row;
+    border: none;
+    margin-block: 20px;
+    vertical-align: middle;
+    outline: none;
+    
+}
+
+.ayuda {
+    text-decoration: none;
+    color: #7aa0bc95;
+    margin-left: 10%;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.ayuda:hover {
+    color: #00090e;
+}
+
+.recuerdame {
+    display: flex;
+    margin-top: 50px;
+}
+
+label{
+    color: white;
+    font-size: 14px;
+    position: center;
+    margin-left: 3%;
+    margin-block: 20px;
+    display: inline-block;
+}
+
+.label {
+    display: inline-block;
+    margin-left: 2%;
+    font-size: 14px;
+}
+
+::placeholder{
+    color: white;
+    text-align: left;
+}
+
+#boton-check {
+    margin-left: 17%;
+    margin-right: 0;
+    position: relative;
+    display: inline-block;
+}
+.lbl-switch {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background: #7aa0bc95;
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+}
+#btn-switch:checked~ .lbl-switch {
+    background: #00090e;
+}
+
+.lbl-switch::after {
+    position:absolute;
+    content: '';
+    width: 14px;
+    height: 14px;
+    background: white;
+    border-radius: 100px;
+    top: 3px;
+    left: 5px;
+    transition: 0.3s;
+}
+#btn-switch:checked~ .lbl-switch::after {
+    left: 20px;
+
+}
+
+#btn-switch{
+    display: none;
+}
+
+#inicio-sesion{
+    color: white;
+    display: inline-block;
+    background: none;
+    border: 1.8px solid white;
+    border-radius: 30px;
+    height: 45px;
+    width: 175px;
+    font-size: 16px;
+    border-style: solid;
+    text-decoration: none;
+    margin-left: 110px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+#inicio-sesion:hover {
+    background:#00090e;
+    color: white;
+    border: none;
+    scale: 1.05;
+}
+
+#inicio-sesion:active {
+    scale: 0.95;
+}
+
+.registrate {
+    display: flex;
+}
+
+#boton-registro {
+    background-color: #00090e;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+    transition: .3s ease all;
+    margin-left: 30px;
+    margin-top: 12px;
+}
+
+#boton-registro:hover {
+    scale: 1.05;
+    color: white;
+    background: none;
+    border: 1.8px solid white;
+}
+
+#boton-registro:active {
+    scale: 0.95;
+}
+
+.labelp{
+    display: inline-block;
+    margin-left: 15%;
+    font-size: 14px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/assets/css/registro.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/3.%20REGISTRO/img/LOGO%20SIMPLE%20VERDE%20CLARO.ico">
+    <title>REGISTRO</title>
+
+</head>
+
+<body>
+    <section>
+        <div class="logo">
+            <a href="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\1. LANDING PAGE\index-landing.html">
+                <img class="totoro"src="https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/3.%20REGISTRO/img/1-LOGO.png"></a>
+        </div>
+        <div class="cuadro">
+            <p class="titulo"">REGISTRATE</p> 
+
+            <form id="formulario-registro">    
+                <input class="form-control" type="text" id="nombre" required placeholder= "Nombre" />
+                <input class="form-control" type="text" id="apellido" required placeholder= "Apellido" />
+                <input class="form-control" type="tel" id="telefono" placeholder= "Telefono" />
+                <input class="form-control" type="email" id="correo" required placeholder= "Correo" />
+                <input class="form-control" type="password" id="contrasena" required placeholder="Contraseña" />
+                <input class="form-control" type="password" id="contrasena" required placeholder="Confirmar contraseña" />
+
+                <input class="form-control" type="submit" id="registrarse" value="Registrarme" />
+            </form>
+
+            <div id="lista"></div>
+            
+            <div class="terminos">
+                <div id="boton-terminos">
+                    <input type="checkbox" id="btn-switch" required />
+                    <label for="btn-switch" class="lbl-switch"></label>
+                </div>
+                <label>Acepto los terminos y politicas de privacidad</label>
+            </div>
+            
+            <div class="inicia-sesion">
+                <label class="label">¿Ya tienes una cuenta? <a href="C:\Users\Manue\OneDrive\Escritorio\GHIFLIX\2. INICIO SESION\index-iniciar.html">Inicia Sesión</a></label>
+            </div>
+        </div>
+    </section>
+</body>
+<footer>
+    <script type="module" src="/assets/js/registro.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+</footer>
+
+</html>

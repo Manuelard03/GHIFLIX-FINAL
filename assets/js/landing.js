@@ -153,30 +153,18 @@ const mifuncion = async () => {
   for (let peli of data.Peliculas) {
     let tarjeta = document.getElementById(peli.id);
     tarjeta.addEventListener('click', () => {
-      const mainMovie = document.querySelector('.peliculaprincipal');
-      peliculaprincipal.style.backgroundColor = 'linear-gradient(rgba(0, 0, 255, 0.166), rgba(0, 0, 0, 0))';
-      peliculaprincipal.innerHTML = `
-      <div class="botones"><button role="button" class="boton"><i class="fa-solid fa-play"></i>Reproducir</button>
-      <button role="button" class="boton"><i class="fa-regular fa-bookmark"></i>Guardar</button>`;
       const descripcion = document.createElement("p");
       const titulo_banner = document.createElement("h3");
       const img_title = document.createElement("img");
       descripcion.classList.add("descripcion");
       titulo_banner.classList.add("titulo");
       img_title.src = peli.banner_title;
-      descripcion.innerHTML = `
-        ${peli.synopsis}
-        `;
       peliculaprincipal.appendChild(descripcion);
       peliculaprincipal.appendChild(titulo_banner);
       titulo_banner.appendChild(img_title);
-      peliculaprincipal.style.background = `linear-gradient(rgba(0, 0, 255, 0.166), rgba(0, 0, 0, 0.855)), url(${peli.banner})`;
-      peliculaprincipal.style.backgroundSize = 'cover';
       return
     });
   };
-
-  peliculaprincipal.style.backgroundColor = 'linear-gradient(rgba(0, 0, 255, 0.166), rgba(0, 0, 0, 0))';
 };
 
 mifuncion();
