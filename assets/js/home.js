@@ -130,12 +130,14 @@ class Pelicula {
     
     mifuncion();
 
-/*barra de buscar*/
+  
+
+/*barra de buscar
     function search() {
         const input = document.querySelector('#search-bar').value.toLowerCase();
         
         // get data source
-        const data = [...]; // your data source here
+        const data = ["https://raw.githubusercontent.com/Manuelard03/GHIFLIX-FINAL/main/assets/json/catalogo-completo.json"];
         
         // filter data source based on input value
         const results = data.filter(item => item.name.toLowerCase().includes(input));
@@ -150,3 +152,4 @@ class Pelicula {
           resultContainer.appendChild(resultDiv);
         }
       }
+*/

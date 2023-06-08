@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #091E28;
+}
+
+
+section{
+    width: 95vw;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+input{
+    width: 40vw;
+    border-radius: 30px;
+    padding: 20px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    margin: 30px;
+}
+
+#listapeliculas{
+    font-size: 20px;
+    margin-top: 20px;
+    list-style: none;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+}
+li{
+    margin: 5px 0;
+}
+
+.filtro{
+    display: none;
+}
