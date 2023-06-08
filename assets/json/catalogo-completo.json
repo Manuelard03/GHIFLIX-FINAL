@@ -3,12 +3,12 @@
         {
             "id": 1,
             "title": "Cuentos de terramar",
-            "card": "https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/Imagenes%20catalogo/0886d6c7ad5bcbfc936ac0ffb8c0f1bb%201.png"
+            "image": "https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/Imagenes%20catalogo/0886d6c7ad5bcbfc936ac0ffb8c0f1bb%201.png"
         },
         {
             "id": 2,
             "title": "La princesa Mononoke",
-            "card": "https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/Imagenes%20catalogo/Princess_Mononoke%201.png"
+            "image": "https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/Imagenes%20catalogo/Princess_Mononoke%201.png"
         },
         {
             "id": 3,

@@ -2,18 +2,18 @@ import { agregarAFavoritos, obtenerFavoritos, eliminarFavorito } from "./session
 
 const TIENDA = "tienda";
 
-export class Pelicula {
+export class Producto {
     #id = "";
-    #card = "";
-    constructor(id, card) {
+    #image = "";
+    constructor(id, image) {
         this.#id = id;
-        this.#card = card;
+        this.#image = image;
     }
 
     render() {
         const image = document.createElement("img");
         image.id = this.#obtenerId();
-        image.src = this.#card;
+        image.src = this.#image;
         image.classList.add("image");
         return image;
     }
@@ -33,7 +33,7 @@ export class Pelicula {
 }
 
 export const cargarFavoritos = async () => {
-    const divFavoritos = document.querySelector("#buscados");
+    const divFavoritos = document.querySelector("#favoritos");
     divFavoritos.innerHTML = "";
 
     const favoritosIds = obtenerFavoritos();
@@ -56,15 +56,15 @@ export const cargarFavoritos = async () => {
 }
 
 export const cargarTienda = async () => {
-    const catalogo = localStorage.getItem(CATALOGO);
+    const tienda = localStorage.getItem(TIENDA);
 
-    if (catalogo === null) {
-        const request = await fetch("https://raw.githubusercontent.com/Manuelard03/GHIFLIX-FINAL/main/assets/json/home.json");
+    if (tienda === null) {
+        const request = await fetch("https://raw.githubusercontent.com/Manuelard03/GHIFLIX-FINAL/main/assets/json/catalogo-completo.json");
         const data = await request.json();
 
-        localStorage.setItem(CATALOGO, JSON.stringify(data));
+        localStorage.setItem(TIENDA, JSON.stringify(data));
         return data;
     }
 
-    return JSON.parse(catalogo);
+    return JSON.parse(tienda);
 }
