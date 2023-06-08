@@ -5,7 +5,7 @@ export const estaEnSesion = () => {
     const usuario = localStorage.getItem(USUARIO);
 
     if (usuario === null) {
-        window.location.href = "./index.html";
+        window.location.href = "C:\Users\Manue\OneDrive\Escritorio\GHIFLIX-FINAL\iniciar-sesion.html";
     }
 
 }

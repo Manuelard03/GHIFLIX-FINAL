@@ -1,0 +1,263 @@
+:root {
+    --fondo: #7AA0BC;
+}
+
+@font-face {
+    font-family: 'AvantGarde LT Mediana';
+    src: url('../FONT/AvantGarde\ LT\ Mediana.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--fondo);
+    font-family: 'Roboto', sans-serif;
+}
+
+.contactanos .formulario {
+    background-color: #091E28;
+    border-radius: 20px;
+    color: white;
+    position: absolute;
+    width: 460px;
+    height: 500px;
+    left: 150px;
+    top: 40px;
+    align-items: center;
+}
+.formulario .form {
+    position: absolute;
+    width: 550px;
+    height: 870px;
+    left: -60px;
+    top: 55px;
+    margin-top: -40px;
+}
+
+.formulario .perfil-gato {
+    position: absolute;
+    width: 210px;
+    height: 250px;
+    left: 190px;
+    top: -65px;
+}
+.formulario h3 {
+    position: absolute;
+    width: 173px;
+    height: 63px;
+    left: 210px;
+    top: 155px;
+    font-family: 'AvantGarde LT Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 59px;
+    text-align: center;
+}
+
+.formulario p {
+    position: absolute;
+    width: 175px;
+    height: 28px;
+    left: 210px;
+    top: 205px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: lighter;
+}
+
+.formulario .botons {
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: #7AA0BC;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    position: absolute;
+    width: 330px;
+    height: 40px;
+    left: 130px;
+    top: 250px;
+    cursor: pointer;
+    transition: .3s ease all;
+    outline: none;
+}
+
+.formulario .botons:hover {
+    scale: 1.05;
+    background: none;
+    color: white;
+    background-color: #618caa;
+    border: none;
+}
+
+.formulario .botons:active {
+    scale: 0.95;
+}
+
+.formulario .botons2 {
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: #7AA0BC;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    position: absolute;
+    width: 330px;
+    height: 40px;
+    left: 130px;
+    top: 300px;
+    cursor: pointer;
+    transition: .3s ease all;
+    outline: none;
+}
+
+.formulario .botons2:hover {
+    scale: 1.05;
+    background: none;
+    color: white;
+    background-color: #618caa;
+    border: none;
+}
+
+.formulario .botons2:active {
+    scale: 0.95;
+}
+
+.formulario .botons3 {
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: #7AA0BC;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    position: absolute;
+    width: 330px;
+    height: 40px;
+    left: 130px;
+    top: 350px;
+    cursor: pointer;
+    transition: .3s ease all;
+    outline: none;
+}
+
+.formulario .botons3:hover {
+    scale: 1.05;
+    background: none;
+    color: white;
+    background-color: #618caa;
+    border: none;
+}
+
+.formulario .botons3:active {
+    scale: 0.95;
+}
+
+.formulario .botons4 {
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border-radius: 30px;
+    border: 1.8px solid white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 195px;
+    top: 410px;
+    cursor: pointer;
+    transition: .3s ease all;
+    outline: none;
+}
+
+.formulario .botons4:hover {
+    scale: 1.05;
+    background: none;
+    color: white;
+    background-color: #00090e;
+    border: none;
+}
+
+.formulario .botons4:active {
+    scale: 0.95;
+}
+
+.perfiles .form2 {
+    background-color: #5e85a1;
+    border-radius: 20px;
+    color: white;
+    width: 500px;
+    height: 250px;
+    margin-left: 670px;
+    margin-top: 40px;
+}
+
+.form2 .perfil-calcifer {
+    position: absolute;
+    width: 152.66px;
+    height: 196px;
+    left: 950px;
+    top: 30px;
+    cursor: pointer;
+    transition: .3s ease all;
+    outline: none;
+}
+
+.form2 .perfil-calcifer:hover {
+    scale: 1.05;
+}
+
+.form2 .perfil-calcifer:active {
+    scale: 0.95;
+}
+
+.form2 .perfil-sincara {
+    position: absolute;
+    width: 151.37px;
+    height: 229px;
+    left: 750px;
+    top: 0px;
+    cursor: pointer;
+    transition: .3s ease all;
+    outline: none;
+}
+
+.form2 .perfil-sincara:hover {
+    scale: 1.05;
+}
+
+.form2 .perfil-sincara :active {
+    scale: 0.95;
+}
+
+.fondo .foto {
+    position: absolute;
+    width: 500px;
+    height: 250px;
+    left: 670px;
+    top: 300px;
+}
+
+footer .logo {
+    position: absolute;
+    width: 220px;
+    height: 85px;
+    margin-left: 520px;
+    top: 560px;
+}
