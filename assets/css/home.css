@@ -655,32 +655,32 @@ input {
     display: flex;
 }
 
-.carrusel-2 .imagenes {
+.carrusel-2 .imagenes2 {
     width: 549px;
     height: 366px;
     display: flex;
 }
 
 
-.viendo .imagenes {
+.viendo .imagenes2 {
     display: flex;
 }
-.carrusel-2 .imagenes .pelicula .nausica {
+.carrusel-2 .imagenes2 .pelicula .nausica {
     position: absolute;
     width: 400px;
     height: 260px;
     cursor: pointer;
     transition: .3s ease all;
 }
-.carrusel-2 .imagenes .pelicula .nausica:hover{
+.carrusel-2 .imagenes2 .pelicula .nausica:hover{
     scale: 1.05;
 }
 
-.carrusel-2 .imagenes .pelicula .nausica:active{
+.carrusel-2 .imagenes2 .pelicula .nausica:active{
     scale: 0.95;
 }
 
-.carrusel-2 .imagenes .pelicula .yamada {
+.carrusel-2 .imagenes2 .pelicula .yamada {
     position: absolute;
     width: 400px;
     height: 260px;
@@ -689,14 +689,14 @@ input {
     cursor: pointer;
     transition: .3s ease all;
 }
-.carrusel-2 .imagenes .pelicula .yamada:hover{
+.carrusel-2 .imagenes2 .pelicula .yamada:hover{
     scale: 1.05;
 }
-.carrusel-2 .imagenes .pelicula .yamada:active{
+.carrusel-2 .imagenes2 .pelicula .yamada:active{
     scale: 0.95;
 }
 
-.carrusel-2 .imagenes .pelicula .earthsea {
+.carrusel-2 .imagenes2 .pelicula .earthsea {
     position: absolute;
     width: 400px;
     height: 260px;
@@ -705,10 +705,10 @@ input {
     cursor: pointer;
     transition: .3s ease all;
 }
-.carrusel-2 .imagenes .pelicula .earthsea:hover{
+.carrusel-2 .imagenes2 .pelicula .earthsea:hover{
     scale: 1.05;
 }
-.carrusel-2 .imagenes .pelicula .earthsea:active{
+.carrusel-2 .imagenes2 .pelicula .earthsea:active{
     scale: 0.95;
 }
 
