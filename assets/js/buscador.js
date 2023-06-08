@@ -4,19 +4,18 @@ document.addEventListener("keyup", e=>{
   
         if (e.key ==="Escape")e.target.value = ""
   
-        document.querySelectorAll(".pelicula").forEach(fruta =>{
+        document.querySelectorAll(".pelicula").forEach(pelicula =>{
   
-            fruta.textContent.toLowerCase().includes(e.target.value.toLowerCase())
-              ?fruta.classList.remove("filtro")
-              :fruta.classList.add("filtro")
+            pelicula.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+              ?pelicula.classList.remove("filtro")
+              :pelicula.classList.add("filtro")
         })
   
     }
   
-  
   })
 
-const catalogo = document.querySelectorAll(".listapeliculas");
+/*const catalogo = document.querySelectorAll(".listapeliculas");
 const divs = Array.from(catalogo);
 
 class Pelicula {
@@ -60,4 +59,4 @@ class Pelicula {
     }
     };
     
-    mifuncion();
+    mifuncion();*/
