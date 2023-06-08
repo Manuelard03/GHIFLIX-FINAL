@@ -14,7 +14,7 @@ const render = async () => {
 
     await cargarFavoritos();
 
-    const listaTienda = document.querySelector("#lista-peliculas");
+    const listaTienda = document.querySelector("#lista-productos");
 
     for (const producto of tienda) {
         const item = new Producto(producto.id, producto.image);

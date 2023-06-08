@@ -59,7 +59,7 @@ export const cargarTienda = async () => {
     const tienda = localStorage.getItem(TIENDA);
 
     if (tienda === null) {
-        const request = await fetch("https://raw.githubusercontent.com/Manuelard03/GHIFLIX-FINAL/main/assets/json/catalogo-completo.json");
+        const request = await fetch("https://fakestoreapi.com/products");
         const data = await request.json();
 
         localStorage.setItem(TIENDA, JSON.stringify(data));
