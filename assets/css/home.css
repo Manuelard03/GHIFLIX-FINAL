@@ -1,0 +1,797 @@
+:root {
+    --fondo: #091E28;
+}
+
+@font-face {
+    font-family: 'AvantGarde LT Mediana';
+    src: url('../FONT/AvantGarde\ LT\ Mediana.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--fondo);
+    font-family: 'Roboto', sans-serif;
+}
+
+body::-webkit-scrollbar{
+    width: 9px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #00141f;
+    border-radius: 5px;
+}
+.contenedor {
+    width: 100%;
+    margin: auto;
+}
+
+header {
+    padding: 0 0;
+    display: flex;
+}
+
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 50px 60px;
+}
+
+.contenedor .Logotipo {
+    max-width: 150px;
+    cursor: pointer;
+    transition: .3s ease all
+}
+
+.contenedor .Logotipo:hover {
+    scale: 1.09;
+}
+
+.contenedor .Logotipo:active{
+    scale: 0.95;
+}
+
+header nav {
+    position: absolute;
+    width: 530px;
+    height: 21px;
+    left: 297px;
+    top: 97px;
+    font-weight: 560;
+}
+
+header nav a {
+    color: #091E28;
+    text-decoration: none;
+    margin: 20px;
+    cursor: pointer;
+    transition: .3s ease all
+}
+
+header nav a:hover, header nav a.activo {
+    color: white;
+    font-weight: 400;
+    scale: 1.09;
+}
+
+.container {
+    display: flex;
+}
+
+.buscar {
+	position: absolute;
+	left: 75%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	padding: 10px;
+}
+
+input {
+	outline: none;
+	box-sizing: border-box;
+	height: 35px;
+	width: 0px;
+	padding: 0 20px;
+	color: white;
+    background: #071b24b2;
+	border-radius: 50px;
+	font-size: 18px;
+	border: none;
+	transition: all .7s ease;
+}
+
+::placeholder {
+	color: white;
+}
+
+.btn {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 50px;
+	height: 50px;
+	background: #00090e;
+	line-height: 50px;
+	border-radius: 50%;
+	text-align: center;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.btn i {
+	font-size: 20px;
+	color: white;
+	line-height: 50px;
+	transition: all .7s ease;
+}
+
+.buscar:hover input {
+	width: 350px;
+}
+
+.buscar:hover i{
+	transform: rotate(-360deg);
+}
+
+.btn:hover{
+	background: #00090e;
+}
+
+.perfil .logo-perfil {
+    position: absolute;
+    width: 90px;
+    height: 80px;
+    left: 1200px;
+    top: 30px;
+    cursor: pointer;
+    transition: all .7s ease;
+}
+
+.perfil .logo-perfil:hover {
+    scale: 1.1;
+}
+
+.perfil .logo-perfil:active {
+    scale: 0.95;
+}
+
+.fondo-principal {
+    font-size: 16px;
+    min-height: 48em;
+    color: white;
+    background: url(./img/2-FONDO-PELICULA-PRINCIPAL.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    align-items: end;
+}
+
+.fondo-principal .contenedor {
+    margin: 0 auto;
+    margin-bottom: 15em;
+    padding: 0px 60px;
+}
+
+.fondo-principal .contenedor .titulo {
+    width: 650px;
+    padding-left: 50px;
+    cursor: pointer;
+    transition: all .7s ease;
+}
+
+.fondo-principal .contenedor .titulo:hover {
+    scale: 1.03;
+}
+
+.fondo-principal .contenedor .titulo:active {
+    scale: 0.95;
+}
+
+.fondo-principal .boton2 {
+    font-family: AvantGarde LT Mediana;
+    display: inline-block;
+    padding: 16px 25px;
+    background-color:#091E28;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .5s ease all;
+    position: absolute;
+    left: 132px;
+    top: 600px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.fondo-principal .boton2:hover {
+    background: rgba(0, 0, 0, 0.473);
+    border: none;
+    scale: 1.1;
+}
+
+.fondo-principal .boton2:active {
+    scale: 0.95;
+}
+
+.fondo-principal .boton3 {
+    font-family: AvantGarde LT Mediana;
+    display: inline-block;
+    padding: 16px 25px;
+    background-color: rgba(0, 0, 0, 0.473);
+    color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+    position: absolute;
+    position: absolute;
+    left: 388px;
+    top: 600px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.fondo-principal .boton3:hover {
+    background: #091E28;
+    border: none;
+    scale: 1.1;
+}
+
+.fondo-principal .boton3:active {
+    scale: 0.95;
+}
+
+.contenedor .genero {
+    position: absolute;
+    width: 67px;
+    height: 66px;
+    left: 1200px;
+    top: 409px;
+    transition: .3s ease all;
+}
+
+.contenedor .genero:hover {
+    scale: 1.1;
+}
+
+.contenedor .genero .texto {
+    font-size: 20px;
+    line-height: 24px;
+    left: 1250px;
+    margin-top: 10px;
+}
+
+
+.buscados {
+    margin: 0 auto;
+    padding: 50px 60px;
+}
+
+.buscados .intro {
+    font-size: 16px;
+    min-height: 10px;
+    color: white;
+}
+
+.buscados .divisor2 {
+    width: 1225px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.buscados .descripcion {
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 70%;
+    margin-bottom: 1.25em;
+}
+
+.buscados {
+    margin: 0 auto;
+    padding: 20px 60px;
+    background-color: #091E28;
+    
+}
+
+.buscados .titulo {
+    font-family: AvantGarde LT Mediana;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 1.75em;
+    max-width: 90%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.indicadores{
+    padding-left: 553px;
+}
+.buscados .indicadores button {
+	background:#002a42bd;
+	height: 20px;
+	width: 20px;
+    border-radius: 50px;
+	cursor: pointer;
+	border: none;
+    margin: 10px;
+    transition: .2s ease all;
+}
+.buscados .indicadores button:hover{
+    background: #00090e81;
+}
+.buscados .indicadores button.activo {
+    background: #00090e;
+    scale: 1.05;
+}
+
+.buscados .indicadores button:active{
+    scale: 0.95;
+}
+
+.buscados .carrusel .flecha-izquierda {
+	position: absolute;
+	border: none;
+	background: none;
+	font-size: 40px;
+	height: 50%;
+	line-height: 40px;
+	width: 50px;
+	color: white;
+	cursor: pointer;
+	transition: .2s ease all;
+    margin-top: 80px;
+    margin-right: 200px;
+}
+
+.buscados .carrusel .flecha-derecha {
+	position: absolute;
+	border: none;
+	background: none;
+	font-size: 40px;
+	height: 50%;
+	width: 50px;
+	color: white;
+	cursor: pointer;
+	transition: .2s ease all;
+    left: 95%;
+    margin-top: -445px;
+}
+
+.buscados .carrusel .flecha-izquierda:hover,
+.buscados .carrusel .flecha-derecha:hover {
+	background: none;
+	color: #010f16;
+    scale: 1.05;
+}
+
+.buscados .carrusel .flecha-izquierda:active,
+.buscados .carrusel .flecha-derecha:active{
+    scale: 0.95;
+}
+
+.buscados .carrusel .flecha-izquierda {
+	left: 0;
+}
+
+.buscados .carrusel .flecha-derecha {
+	right: 0;
+}
+
+/* ---- ----- ----- Carousel ----- ----- ----- */
+.carrusel .imagenes {
+	width: 100%;
+	padding: 20px 0px;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.imagenes .carrusel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+.modal__container{
+    margin: auto;
+    width: 90%;
+    max-width: 900px;
+    max-height: 90%;
+    background-image: url(https://m.media-amazon.com/images/M/MV5BMTU1NTE5NjQ0OF5BMl5BanBnXkFtZTcwMzk1NzEyNw@@._V1_.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+    border-radius: 25px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition:var(--transition);
+}
+
+.modal__container::before {
+    content: '';
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.7;
+    border-radius: 25px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.modal__año {
+    font-size: 18px;
+    color: #002638;
+    position: relative;
+    box-shadow: #000000;
+}
+
+
+.modal__info {
+    position: relative;
+    color: #002638;
+    text-shadow: #000000;
+}
+
+.modal__paragraph{
+    position: relative;
+    margin-bottom: 10px;
+    color: white;
+    max-width: 80%;
+    line-height: 1.5em;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+.modal__generos {
+    position: relative;
+    color: white;
+    font-style: italic;
+
+}
+
+.modal__img {
+    height: 0px;
+    width: 60px;
+    
+}
+
+.modal__boton {
+    position: relative;
+    font-family: AvantGarde LT Mediana;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #091E28;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+    box-shadow: 5px 5px 10px -5px #08463a;
+    outline: none;
+}
+.modal__boton i {
+    margin-right: 10px;
+}
+
+.modal__boton:hover {
+    scale: 1.05;
+}
+
+.modal__boton:active {
+    scale: 0.95;
+}
+
+.modal__close{
+    position: relative;
+    color: #fff;
+    padding: 0.6em 0.8em;
+    display: inline-block;
+    transition: background-color .3s;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.modal__close:hover{
+    scale: 1.05;
+    color: #00090e;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.modal__close:active{
+    scale: 0.95;
+}
+
+@media (max-width:800px) {
+    .modal__container{
+        padding: 2em 1.5em;
+    }
+
+    .modal__title{
+        font-size: 2rem;
+    }
+}
+
+.carrusel .imagenes .el-castillo-ambulante .castillo-ambulante {
+    height: 400px;
+    width: 300px;
+    margin: 20px;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 25px;
+}
+.carrusel .imagenes .el-castillo-ambulante .castillo-ambulante:hover {
+    scale: 1.05;
+}
+
+.carrusel .imagenes .el-castillo-ambulante .castillo-ambulante:active{
+    scale: 0.95;
+}
+
+
+.carrusel .imagenes .pelicula {
+	min-width: 20%;
+	transition: .3s ease all;
+	margin: 20px;
+    cursor: pointer;
+}
+
+.carrusel .imagenes .pelicula:hover {
+	scale: 1.05;
+	transform-origin: center;
+}
+
+.carrusel .imagenes .pelicula:active{
+    scale: 0.95;
+}
+
+.carrusel .imagenes .pelicula img {
+	width: 100%;
+	vertical-align: top;
+	border: none;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 800px) {
+	
+	.buscados .imagenes {
+		overflow: visible;
+	}
+
+	.buscados .carrusel .imagenes {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+
+	.buscados .indicadores,
+	.buscados .flecha-izquierda,
+	.buscados .flecha-derecha {
+		display: none;
+	}
+}
+.buscados .imagenes {
+    display: flex;
+}
+
+.carrusel .imagenes img{
+	height: 400px;
+    width: 450px;
+    margin: 20px;
+}
+
+.viendo {
+    margin: 0 auto;
+    padding: 50px 60px;
+}
+
+.viendo .intro {
+    font-size: 16px;
+    min-height: 10px;
+    color: white;
+}
+
+.viendo .titulo {
+    font-family: AvantGarde LT Mediana;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 1.75em;
+    max-width: 90%;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.viendo .divisor {
+    width: 1225px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#viendo .carrusel-2 {
+    display: flex;
+}
+
+.carrusel-2 .imagenes {
+    width: 549px;
+    height: 366px;
+    display: flex;
+}
+
+
+.viendo .imagenes {
+    display: flex;
+}
+.carrusel-2 .imagenes .pelicula .nausica {
+    position: absolute;
+    width: 400px;
+    height: 260px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.carrusel-2 .imagenes .pelicula .nausica:hover{
+    scale: 1.05;
+}
+
+.carrusel-2 .imagenes .pelicula .nausica:active{
+    scale: 0.95;
+}
+
+.carrusel-2 .imagenes .pelicula .yamada {
+    position: absolute;
+    width: 400px;
+    height: 260px;
+    left: 480px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.carrusel-2 .imagenes .pelicula .yamada:hover{
+    scale: 1.05;
+}
+.carrusel-2 .imagenes .pelicula .yamada:active{
+    scale: 0.95;
+}
+
+.carrusel-2 .imagenes .pelicula .earthsea {
+    position: absolute;
+    width: 400px;
+    height: 260px;
+    left: 900px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.carrusel-2 .imagenes .pelicula .earthsea:hover{
+    scale: 1.05;
+}
+.carrusel-2 .imagenes .pelicula .earthsea:active{
+    scale: 0.95;
+}
+
+
+.recomendado {
+    border: 50px;
+    margin: 0 auto;
+    padding: 0px 50px;
+    padding-bottom: 50px;
+}
+
+.recomendado .intro {
+    font-size: 16px;
+    min-height: 10px;
+    color: white;
+}
+
+.recomendado .titulo {
+    font-family: AvantGarde LT Mediana;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 1.75em;
+    max-width: 90%;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.recomendado .divisor {
+    width: 1225px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.recomendado .pelicula .arriety {
+    width: 80px;
+    height: 20px;
+    left: 93px;
+    top: 2338px;
+}
+
+/* footer */
+.footer{
+    padding-top: 20px;
+    background-color: black;
+}
+.footer--contenedor{
+    width: 95%;
+    margin-inline:auto;
+}
+
+.informacion{
+    display: grid;
+    color: #00080c;
+    gap: 20px;
+    margin-block:20px;
+    font-size: 15px;
+}
+@media (min-width:400px) {
+    .informacion{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width:768px) {
+    .informacion{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width:992px) {
+    .informacion{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+.informacion p:hover{
+    color: white;
+}
+.idioma{
+    color: white;
+    padding: 8px;
+    font-weight: 500;
+}
+.contruccion{
+    color: white;
+    padding: 10px;
+    font-weight: 500;
+    text-align: center;
+}
