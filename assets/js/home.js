@@ -129,3 +129,24 @@ class Pelicula {
     };
     
     mifuncion();
+
+/*barra de buscar*/
+    function search() {
+        const input = document.querySelector('#search-bar').value.toLowerCase();
+        
+        // get data source
+        const data = [...]; // your data source here
+        
+        // filter data source based on input value
+        const results = data.filter(item => item.name.toLowerCase().includes(input));
+        
+        // do something with the results
+        // for example, display them in the DOM
+        const resultContainer = document.querySelector('#search-results');
+        resultContainer.innerHTML = '';
+        for (const item of results) {
+          const resultDiv = document.createElement('div');
+          resultDiv.textContent = item.name;
+          resultContainer.appendChild(resultDiv);
+        }
+      }

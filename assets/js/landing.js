@@ -94,44 +94,31 @@ flechaIzquierda.addEventListener('click', () => {
         });
 
 /*Fotos carrusel*/
-const carruseles = document.querySelectorAll(".carousel");
-const divs = Array.from(carruseles);
+const carruselcatalogo = document.querySelectorAll(".carousel");
+const divs = Array.from(carruselcatalogo);
 
 class Pelicula {
   titulo = "";
-  banner = "";
   tarjeta = "";
-  overview = "";
 
-  constructor(card, banner, id, banner_title, synopsis) {
+  constructor(card, id) {
     this.tarjeta = card;
-    this.banner = banner;
     this.id = id;
-    this.banner_title = banner_title;
-    this.synopsis = synopsis;
   }
 
   render() {
     const card = document.createElement("div");
-
     const a = document.createElement("a");
     const img = document.createElement("img");
-    const rating = document.createElement("div");
-
     card.classList.add("pelicula");
     card.id = this.id;
     img.src = this.tarjeta;
     a.href = "#";
     card.appendChild(a);
     a.appendChild(img);
-    card.appendChild(rating);
 
     return card;
   }
-}
-
-const peliRandom = (peliculas) => {
-  return peliculas[Math.floor(Math.random() * peliculas.length)];
 }
 
 const mifuncion = async () => {
@@ -139,32 +126,16 @@ const mifuncion = async () => {
     "https://raw.githubusercontent.com/Manuelard03/GHIFLIX-FINAL/main/assets/json/peliculas.json"
   );
   const data = await response.json();
-  const carruseles = document.querySelectorAll(".carousel");
+  const carruselcatalogo = document.querySelectorAll(".carousel");
   
   for (let movie of data.Peliculas) {
     let peli = new Pelicula(movie.card, movie.banner, movie.id, movie.banner_title, movie.synopsis);
     const pelis = peli.render();
 
-    carruseles.forEach((carrusel) => {
+    carruselcatalogo.forEach((carrusel) => {
       carrusel.appendChild(pelis.cloneNode(true));
     });
   }
-
-  for (let peli of data.Peliculas) {
-    let tarjeta = document.getElementById(peli.id);
-    tarjeta.addEventListener('click', () => {
-      const descripcion = document.createElement("p");
-      const titulo_banner = document.createElement("h3");
-      const img_title = document.createElement("img");
-      descripcion.classList.add("descripcion");
-      titulo_banner.classList.add("titulo");
-      img_title.src = peli.banner_title;
-      peliculaprincipal.appendChild(descripcion);
-      peliculaprincipal.appendChild(titulo_banner);
-      titulo_banner.appendChild(img_title);
-      return
-    });
-  };
 };
 
 mifuncion();

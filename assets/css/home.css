@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'AvantGarde LT Mediana';
-    src: url('../FONT/AvantGarde\ LT\ Mediana.ttf') format('truetype');
+    src: url(/assets/varios/Font/AvantGarde\ LT\ Mediana.ttf) format('truetype');
     font-style: normal;
     font-weight: normal;
 }
@@ -168,7 +168,7 @@ input {
     font-size: 16px;
     min-height: 48em;
     color: white;
-    background: url(./img/2-FONDO-PELICULA-PRINCIPAL.png);
+    background: url(https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/5.%20HOME%20PAGE/img/2-FONDO-PELICULA-PRINCIPAL.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size:cover;

@@ -1,0 +1,119 @@
+{
+    "Catalogo": [
+        {
+            "id": 1,
+            "title": "Cuentos de terramar",
+            "card": "https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/Imagenes%20catalogo/0886d6c7ad5bcbfc936ac0ffb8c0f1bb%201.png"
+        },
+        {
+            "id": 2,
+            "title": "La princesa Mononoke",
+            "card": "https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/Imagenes%20catalogo/Princess_Mononoke%201.png"
+        },
+        {
+            "id": 3,
+            "title": "La tumba de las luciernagas",
+            "card": "https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/Imagenes%20catalogo/eee052234a637270bce034c723c7f735%201.png"
+        },
+        {
+            "id": 4,
+            "title": "Nausicaa del valle del viento",
+            "card": "https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/Imagenes%20catalogo/MV5BZTI3NmJmYTQtNDg4NS00M2VlLTgzZDAtZWIwZDcyOWY5YzIzXkEyXkFqcGdeQXVyMTMxODk2OTU%40%201.png"
+        },
+        {
+            "id": 5,
+            "title": "Mi vecino Totoro",
+            "card": "https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/Imagenes%20catalogo/thumb-355178%201.png"
+        },
+        {
+            "id": 6,
+            "title": "Kiki: entregas a domicilio",
+            "card": "https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/Imagenes%20catalogo/descarga%20(3)%201.png"
+        },
+        {
+            "id": 7,
+            "title": "El viaje de Chihiro",
+            "card": "https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/Imagenes%20catalogo/SA%201.png"
+        },
+        {
+            "id": 8,
+            "title":"Porco Rosso",
+            "card": "https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/Imagenes%20catalogo/Porco%20Rosso%201.png"
+        },
+        {
+            "id": 9,
+            "title": "Susurros del corazon",
+            "card": "https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/Imagenes%20catalogo/cd5e7506601711b66b8674f50af2bff9%201.png" 
+        },
+        {
+            "id": 10,
+            "title":"Erwig y la bruja",
+            "card": "https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/Imagenes%20catalogo/2LY0BFq2S9jBiCD1EPvMMApRpb2%201.png"
+        },
+        {
+            "id": 11,
+            "title": "El regreso del gato",
+            "card": "https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/Imagenes%20catalogo/2b94f9ea8d87a1b4c6b2f19b40c51c58%201.png"
+        },
+        {
+            "id": 12,
+            "title": "Ponyo y el secreto de la sirenita",
+            "card": "https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/Imagenes%20catalogo/2dac04ebc5734314e327b6dd15c2be42%201.png"
+        },
+        {
+            "id": 13,
+            "title": "El castillo ambulante",
+            "card": "https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/Imagenes%20catalogo/El%20castillo%20ambulante%20(1)%201.png"
+        },
+        {
+            "id": 14,
+            "title": "Mis vecinos los yamada",
+            "card": "https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/Imagenes%20catalogo/MV5BZDBhYThkMWMtZTBlMi00NzMyLWE3YTktMjVjOWUwOTEyMjNlXkEyXkFqcGdeQXVyMTMxODk2OTU%40%201.png"
+        },
+        {
+            "id": 15,
+            "title": "Puedo escuchar el mar",
+            "card": "https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/Imagenes%20catalogo/Ocean_Waves_English%201.png"
+        },
+        {
+            "id": 16,
+            "title": "Recuerdos del ayer",
+            "card": "https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/Imagenes%20catalogo/Studio%20Ghibli%201.png"
+        },
+        {
+            "id": 17,
+            "title": "Arrietty y el mundo de los diminutos",
+            "card": "https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/Imagenes%20catalogo/The%20Secret%20World%20of%20Arrietty%20(2010)%201.png"
+        },
+        {
+            "id": 18,
+            "title": "El cuento de la princesa Kaguya",
+            "card": "https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/Imagenes%20catalogo/The_Tale_of_the_Princess_Kaguya%201.png"
+        },
+        {
+            "id": 19,
+            "title": "Se levanta el viento",
+            "card": "https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/Imagenes%20catalogo/The_Wind_Rises%201.png"
+        },
+        {
+            "id": 20,
+            "title": "Pompoko",
+            "card": "https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/Imagenes%20catalogo/a6b37bd717be6ec73e2d2254be8800a6%201.png"
+        },
+        {
+            "id": 21,
+            "title": "El castillo en el cielo",
+            "card": "https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/Imagenes%20catalogo/b6230ce40fe086224c8c4026d0c467cb%201.png"
+        },
+        {
+            "id": 22,
+            "title": "La colina de las amapolas",
+            "card": "https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/Imagenes%20catalogo/from-up-on-poppy-hill%201.png"
+        },
+        {
+            "id": 23,
+            "title": "El recuerdo de Marnie",
+            "card": "https://raw.githubusercontent.com/Manuelard03/GHIFLIX/main/Imagenes%20catalogo/vug1dvDI1tSa60Z8qjCuUE7ntkO%201.png"
+        }
+    ]
+}
