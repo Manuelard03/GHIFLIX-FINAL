@@ -5,7 +5,7 @@ export const estaEnSesion = () => {
     const usuario = localStorage.getItem(USUARIO);
 
     if (usuario === null) {
-        window.location.href = "C:\Users\Manue\OneDrive\Escritorio\GHIFLIX-FINAL\iniciar-sesion.html";
+        window.location.href = "./iniciar-sesion.html";
     }
 
 }
@@ -29,7 +29,7 @@ const usuarioExiste = (correoUsuario, contrasenaUsuario) => {
 export const validarUsuario = (correoUsuario, contrasenaUsuario) => {
     if(usuarioExiste(correoUsuario, contrasenaUsuario) === true) {
         localStorage.setItem(USUARIO, correoUsuario);
-        window.location.href = "./usuario.html";
+        window.location.href = "./perfiles-.html";
     } else {
         alert("El usuario no existe");
     }
